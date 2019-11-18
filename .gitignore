@@ -6,3 +6,4 @@ dist
 *.hot-update.js
 *.hot-update.json
 .idea
+static
