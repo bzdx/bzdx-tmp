@@ -26,7 +26,6 @@ module.exports = {
             {from: "./wpk/libs", to: "./libs"},
             {from: "./wpk/img", to: "./img"},
             {from: "./wpk/css/", to: "./css"},
-            {from: "./wpk/fonts", to: "./fonts"},
             {from: "./wpk/views", to: "../views"},
         ]),
         new UglifyJsPlugin(),
