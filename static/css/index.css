@@ -1,0 +1,317 @@
+@font-face {
+  font-family: SourceHanSansCN-Normal;
+  src: url("/static/fonts/SourceHanSansCN-Normal.otf");
+}
+@font-face {
+  font-family: SourceHanSansCN-Bold;
+  src: url("/static/fonts/SourceHanSansCN-Bold.otf");
+}
+@font-face {
+  font-family: SourceHanSansCN-Heavy;
+  src: url("/static/fonts/SourceHanSansCN-Heavy.otf");
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: SourceHanSansCN-Normal;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+#page-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+}
+#page-header .header-logo {
+  margin: 2% 7.8%;
+}
+@media screen and (max-width: 1320px) {
+  #page-header .header-logo {
+    margin-top: 0.6%;
+  }
+}
+#page-header .header-nav-list {
+  position: absolute;
+  right: 5%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 800px;
+}
+@media screen and (max-width: 1320px) {
+  #page-header .header-nav-list {
+    left: 0;
+  }
+}
+#page-header .header-nav-list-item {
+  display: inline-block;
+  position: relative;
+  width: 16.5%;
+  height: 110px;
+  line-height: 110px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#page-header .header-nav-list-item:hover {
+  color: #dbc19d;
+}
+#page-header .header-nav-list-item-active {
+  color: #dbc19d;
+}
+#page-header .header-nav-list-item-en {
+  font-style: 18px;
+  letter-spacing: 0;
+}
+#page-header .header-lang {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  width: 120px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+#page-header .header-lang .active {
+  color: #dbc19d;
+}
+#page-content {
+  overflow: hidden;
+}
+#page-content .content-bar {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+@media screen and (min-width: 900px) {
+  #page-content .content-bar {
+    width: 100%;
+  }
+}
+#page-content .content-bar-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+}
+@media screen and (max-width: 1320px) {
+  #page-content .content-bar-list {
+    transform: scale(0.8);
+  }
+}
+#page-content .content-bar-item {
+  margin-bottom: 10px;
+  font-size: 400%;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 8px;
+}
+#page-content .content-bac {
+  position: absolute;
+  z-index: 1;
+}
+#page-content .content-wrapper {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  margin: -120px auto 0;
+  width: 1200px;
+  transform: scale(0.9);
+}
+#page-content .content-wrapper-en {
+  margin-top: -60px;
+}
+.content-article {
+  padding: 10% 0;
+}
+.content-article-title {
+  position: relative;
+  vertical-align: top;
+  margin-top: -48px;
+  padding: 46px 0;
+  font-size: 58px;
+  line-height: 80px;
+  color: #182d55;
+  font-weight: 540;
+  letter-spacing: 12px;
+}
+.content-article-title .under-line {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  height: 2px;
+  background-color: #dbc19d;
+}
+.content-article-txt {
+  display: inline-block;
+  width: 52%;
+  font-size: 24px;
+  text-indent: 58px;
+  text-align: justify;
+  line-height: 48px;
+  letter-spacing: 4px;
+  color: #666;
+}
+.content-article-txt-right {
+  margin-left: 11%;
+}
+.content-article-txt p {
+  margin-top: 60px;
+}
+.content-article-img {
+  vertical-align: top;
+  width: 36%;
+}
+.content-article-img-right {
+  margin-left: 14%;
+  width: 33%;
+}
+#page-footer {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  height: 430px;
+  color: #fff;
+  background-color: #f7f7f7;
+}
+#page-footer .footer-info {
+  position: absolute;
+  left: 50%;
+  margin: 48px -448px 0;
+}
+#page-footer .footer-beian {
+  position: absolute;
+  bottom: 0;
+  background-color: #2b2c30;
+  height: 100px;
+  text-align: center;
+}
+#page-footer .footer-beian .footer-bottom-copy {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+#page-footer .footer-beian a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+#page-footer .footer-code {
+  position: absolute;
+  bottom: 132px;
+  right: 8%;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  #page-header .header-nav-list {
+    right: -2% !important;
+    left: auto !important;
+    transform: scale(0.8);
+  }
+  .content-bar-title {
+    transform: scale(0.6);
+  }
+  .content-article {
+    margin-left: -20%;
+    transform: scale(0.6);
+  }
+  .content-interval {
+    margin: -200px 6% !important;
+  }
+  .footer-info {
+    transform: scale(0.8);
+    margin-left: -55% !important;
+  }
+  .content-intro {
+    margin: 160px 5% !important;
+  }
+  .content-intro-item {
+    margin-top: 18px !important;
+  }
+  .content-wrapper {
+    transform: scale(0.8) !important;
+  }
+  .content-table {
+    transform: scale(0.8) !important;
+  }
+  .content-table-en {
+    margin-top: -20px !important;
+  }
+  .img-dec {
+    transform: scale(0.6) !important;
+  }
+  .content-msg {
+    margin-left: -100px !important;
+    transform: scale(0.7) !important;
+  }
+  .content-imgs {
+    margin-top: -300px !important;
+    transform: scale(0.6) !important;
+  }
+  .content-suggestion-list-item {
+    font-size: 16px !important;
+  }
+}
+.content-bar-title {
+  margin-left: -600px;
+}
+.text-li {
+  left: 0;
+  top: 186%;
+  opacity: 0.7;
+}
+.text-pu {
+  right: 0;
+  top: 490%;
+  opacity: 0.7;
+}
+.content-wrapper {
+  margin-bottom: -140px !important;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .content-wrapper {
+    margin-top: -600px !important;
+    margin-bottom: -600px !important;
+  }
+}
+.content-interval {
+  margin: 0 auto;
+  padding: 100px 0;
+  width: 772px;
+  opacity: 0.7;
+}
+.content-interval img {
+  position: relative;
+}
+.content-interval-img-line {
+  top: -36px;
+}
+.content-article-title {
+  font-family: SourceHanSansCN-Bold;
+}
+.content-article-txt {
+  font-size: 22px;
+}
+.content-article-title-en {
+  letter-spacing: 0;
+}
+.content-article-p-en {
+  letter-spacing: 0;
+  line-height: 32px;
+  font-size: 20px;
+}
