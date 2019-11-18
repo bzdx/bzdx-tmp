@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "bzdx-tmp/routers"
+	_ "{{ appname }}/routers"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/context"
 )

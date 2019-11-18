@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"bzdx-tmp/controllers"
+	"{{ appname }}/controllers"
 	"github.com/astaxie/beego"
 )
 
