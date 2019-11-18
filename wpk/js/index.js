@@ -1,7 +1,7 @@
 new Vue({
     el: "#page",
     data: {
-        title: "11111"
+        title: "bzdx-cli"
     },
     template: `<div>
         {{ title }}
