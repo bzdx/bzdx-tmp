@@ -7,4 +7,3 @@ dist
 *.hot-update.json
 .idea
 static
-views
