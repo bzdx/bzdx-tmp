@@ -7,7 +7,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: {
-        index: "./wpk/js/index.js",
+        index: "./src/js/index.js",
     },
     output: {
         path: path.resolve(__dirname, './static'),
@@ -23,10 +23,10 @@ module.exports = {
         // new CleanWebpackPlugin.CleanWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new CopyWebpackPlugin([
-            {from: "./wpk/libs", to: "./libs"},
-            {from: "./wpk/img", to: "./img"},
-            {from: "./wpk/css/", to: "./css"},
-            {from: "./wpk/views", to: "../views"},
+            {from: "./src/libs", to: "./libs"},
+            {from: "./src/img", to: "./img"},
+            {from: "./src/css/", to: "./css"},
+            {from: "./src/views", to: "../views"},
         ]),
         new UglifyJsPlugin(),
     ],
